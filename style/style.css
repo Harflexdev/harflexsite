@@ -1,516 +1,188 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="home">
+      <header class="header-container">
+        <div class="header-item">
+          <h1>Academia</h1>
+          <p>Online Education & Learning</p>
+        </div>
+        <div class="header-item">
+          <i
+            class="fa-regular fa-clock"
+            style="color: white; font-size: 2rem; margin-top: 12px"
+          ></i>
+          <span>
+            <p>Monday - Friday</p>
+            <p>8:00AM-8:00PM</p>
+          </span>
+        </div>
+        <div class="header-item">
+          <i
+            class="fa-solid fa-phone"
+            style="color: white; font-size: 2.2rem; margin-top: 3px"
+          ></i>
+          <span>
+            <p>Call Us</p>
+            <p>+2348067356383</p>
+          </span>
+        </div>
+        <div class="header-item">
+          <span>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </header>
+      <!-- nav section -->
+      <nav>
+        <header class="ad">ACADEMIA</header>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" style="color: #1eb2a6">Home</a>
+          <a href="#">All Courses</a>
+          <a href="#about">About</a>
+          <a href="#">Team</a>
+          <a href="#">Pricing</a>
+          <a href="#">Journal</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-btn">
+          <button>Get Certificate</button>
+        </div>
+        <div class="menu" id="menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+      <!-- content  -->
+      <div class="home-container">
+        <div class="home-item" data-aos="fade-up">
+          <h3>Welcome to Academia</h3>
+          <h1>Best Online Education Expertise</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum alias
+            doloribus impedit voluptates soluta libero cum vel!
+          </p>
+          <div class="btn">
+            <div class="btn-coll">
+              <button>
+                Get Started Now
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+              </button>
+            </div>
+            <div class="btn-coll">
+              <button>
+                View Courses
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="home-item"></div>
+      </div>
+    </section>
+    <section id="sub-hero" style="height: 100vh">
+      <div class="sub-hero-container" data-aos="fade-up">
+        <div class="sub-hero-item"><img src="./img/hero.png" alt="" /></div>
+        <div class="sub-hero-item">
+          <h3>Learn Anything</h3>
+          <h1>Benefits About Online Learning Expertise</h1>
+          <div class="benefit-container">
+            <div class="benefit-item">
+              <div class="box">
+                <img src="img/course.png" alt="" />
+                <h1>Online Courses</h1>
+              </div>
 
-body {
-  z-index: -1;
-  overflow-x: hidden;
-  font-family: "Roboto", Arial, sans-serif;
-}
-/* Home section */
-#home {
-  background-color: #a2c5cc;
-  background-image: url(../img/hero.png);
-  object-fit: cover;
-  overflow: hidden;
-  background-size: 550px;
-  background-repeat: no-repeat;
-  background-position-y: 50px;
-  background-position-x: right;
-  background-color: rgb(27, 26, 26);
-  background-blend-mode: luminosity;
-}
-@media screen and (max-width: 650px) {
-  #home {
-    background-color: rgb(27, 26, 26);
-    background-blend-mode: overlay;
-  }
-}
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Mollitia ipsa natus id obcaecati at aliquid?
+              </p>
+            </div>
+            <div class="benefit-item">
+              <div class="box">
+                <img src="img/certificate.png" alt="" />
+                <h1>Earn A Certificates</h1>
+              </div>
 
-/* Header section */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2%;
-  width: 100%;
-  gap: 50px;
-}
-.header-item {
-  height: 70px;
-  width: 20%;
-  text-align: center;
-  color: white;
-}
-.header-item:nth-child(1) > h1 {
-  font-weight: 800;
-  font-size: 30px;
-  color: #fff;
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Mollitia ipsa natus id obcaecati at aliquid?
+              </p>
+            </div>
+            <div class="benefit-item">
+              <div class="box">
+                <img src="img/expert.png" alt="" />
+                <h1>Learn with Expert</h1>
+              </div>
 
-  line-height: 1.1;
-  letter-spacing: 4px;
-  margin-right: 6px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-.header-item:nth-child(1) > h1:hover {
-  color: #1eb2a6;
-  transition: 0.8s ease-in-out;
-}
-.header-item:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.header-item:nth-child(2) {
-  color: white;
-}
-.header-item > span > p:first-child {
-  font-size: 1rem;
-  padding: 7px;
-  margin-top: 1px;
-  color: white;
-}
-.header-item:nth-child(3) {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-left: 0;
-}
-.header-item:nth-child(4) > span {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 30px;
-}
-.fa-facebook-f,
-.fa-twitter,
-.fa-instagram,
-.fa-envelope {
-  padding: 3%;
-  color: #1eb2a6;
-  border-radius: 100%;
-  backdrop-filter: blur(20px);
-  border: 1px solid #1eb2a6;
-}
-.fa-envelope:hover {
-  color: white;
-}
-.fa-facebook-f:hover {
-  color: white;
-}
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Mollitia ipsa natus id obcaecati at aliquid?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work">
+      <div class="work-container">
+        <div class="work-item">
+          <div class="box">
+            <img src="img/graduated.png" alt="" />
+            <h1 style="font-size: 2rem" id="time"></h1>
+          </div>
 
-.fa-twitter:hover {
-  color: white;
-}
-.fa-instagram:hover {
-  color: white;
-}
-@media screen and (max-width: 470px) {
-  .header-container {
-    display: none;
-  }
-}
-@media screen and (max-width: 1028px) {
-  .header-container {
-    display: none;
-  }
-}
-/* Nav section */
-nav {
-  width: 97%;
-  display: flex;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  z-index: 2;
-  margin: auto;
-  transition: 0.6s ease-in-out;
-  cursor: pointer;
-  backdrop-filter: blur(5px);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
+          <p>Success Stories</p>
+        </div>
+        <div class="work-item">
+          <div class="box">
+            <img src="img/Authors.png" alt="" />
+            <h1 style="font-size: 2rem" id="time2"></h1>
+          </div>
 
-  gap: 40px;
-}
-.nav-links > a {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-}
-.nav-btn > button {
-  height: 67px;
-  width: 250px;
-  background-color: #1eb2a6;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: white;
+          <p>Trusted Tutors</p>
+        </div>
+        <div class="work-item">
+          <div class="box">
+            <img src="img/scheldue.png" alt="" />
+            <h1 style="font-size: 2rem" id="time3"></h1>
+          </div>
 
-  border: 1px solid transparent;
-  transform: translateX(20px);
-  border-top-left-radius: 100px;
-  cursor: pointer;
-}
-.menu {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.bar {
-  height: 4px;
-  width: 23px;
-  margin-top: 3px;
-  background-color: white;
-}
-.menu.active > .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.menu.active > .bar:nth-child(1) {
-  opacity: 0;
-}
-.menu.active > .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(-5px, 5px);
-}
-nav > .ad {
-  color: white;
-  font-size: 2rem;
-  display: none;
-}
+          <p>Schedules</p>
+        </div>
+        <div class="work-item">
+          <div class="box">
+            <img src="img/course.png" alt="" />
+            <h1 style="font-size: 2rem" id="time4"></h1>
+          </div>
 
-@media screen and (max-width: 1028px) {
-  .nav-links {
-    width: 100%;
-    display: none;
-    text-align: center;
-    height: calc(100vh - 60px);
-    z-index: 1;
-
-    align-items: center;
-    position: absolute;
-    flex-direction: column;
-    top: 60px;
-    background-color: rgb(70, 59, 59);
-    background-blend-mode: soft-light;
-    /* height: calc(100vh - 60px); */
-    gap: 20px;
-    transform: translateX(100%);
-    overflow-x: hidden;
-    right: 0;
-    transition: transform 0.7s ease-in-out;
-  }
-  nav > .ad {
-    display: flex;
-  }
-  .nav-btn > button {
-    display: none;
-  }
-  nav > header {
-    display: block;
-  }
-
-  .menu {
-    display: flex;
-  }
-
-  .nav-links.hidden {
-    transform: translateX(0);
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .nav-links {
-    width: 100%;
-    display: none;
-    text-align: center;
-    height: calc(100vh - 60px);
-    z-index: 1;
-    position: fixed;
-    align-items: center;
-    position: absolute;
-    flex-direction: column;
-    top: 60px;
-    background-color: rgb(0, 0, 0);
-    background-blend-mode: soft-light;
-    /* height: calc(100vh - 60px); */
-    gap: 20px;
-    transform: translateY(-200%);
-    right: 0px;
-    transition: transform 0.7s ease-in-out;
-  }
-  nav > .ad {
-    display: flex;
-  }
-  nav {
-    width: 100%;
-    height: 50px;
-  }
-  .nav-btn > button {
-    display: none;
-  }
-  nav > header {
-    display: block;
-  }
-
-  .menu {
-    display: flex;
-  }
-
-  .nav-links.hidden {
-    transform: translateY(0);
-  }
-}
-.home-container {
-  width: 100%;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 2%;
-  z-index: -1;
-}
-.home-item {
-  height: 400px;
-  padding: 100px;
-  width: 50%;
-}
-.home-item > h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  letter-spacing: 2px;
-  z-index: 0;
-}
-.home-item > h1 {
-  font-weight: 600;
-  color: #fff;
-  font-size: 40px;
-  margin-top: 6px;
-  line-height: 1.2;
-}
-.home-item > p {
-  color: gray;
-  font-size: 14px;
-  margin-top: 20px;
-}
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
-}
-.btn-coll {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn-coll > button {
-  width: 160px;
-  height: 50px;
-  cursor: pointer;
-  background-color: #1eb2a6;
-  border: 0;
-  color: white;
-  border-radius: 4px;
-  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.btn-coll > button:hover {
-  border: 1px solid #1eb2a6;
-  background-color: white;
-  color: #1eb2a6;
-  transition: 0.7s ease-in-out;
-}
-
-@media screen and (max-width: 470px) {
-  .home-container {
-    flex-direction: column;
-    height: fit-content;
-  }
-  .home-item:first-child {
-    margin: 0;
-    width: 100%;
-    padding: 10px;
-    height: fit-content;
-  }
-  .home-item:first-child > h3 {
-    font-size: 0.8rem;
-    display: flex;
-    margin-top: 120px;
-    align-items: flex-start;
-  }
-  .home-item:first-child > h1 {
-    font-size: 1.9rem;
-    margin-top: 10px;
-  }
-  .header-item:last-child {
-    display: none;
-  }
-  .btn {
-    gap: 0;
-    flex-direction: column;
-    justify-content: left;
-  }
-  .btn-coll > button {
-    width: 300px;
-  }
-  .btn-coll {
-    gap: 0;
-    justify-content: flex-start;
-  }
-}
-@media screen and (max-width: 1028px) {
-  .home-container {
-    flex-direction: column;
-    height: fit-content;
-  }
-  .home-item:first-child {
-    margin: 0;
-    width: 100%;
-    padding: 10px;
-    height: fit-content;
-  }
-  .home-item:first-child > h3 {
-    font-size: 0.8rem;
-    display: flex;
-    margin-top: 70px;
-    align-items: flex-start;
-  }
-  .home-item:first-child > h1 {
-    font-size: 1.9rem;
-    margin-top: 10px;
-  }
-  .header-item:last-child {
-    display: none;
-  }
-  .btn {
-    gap: 10px;
-    justify-content: left;
-  }
-  .btn-coll > button {
-    width: 300px;
-  }
-  .btn-coll {
-    gap: 0;
-    justify-content: flex-start;
-  }
-}
-/* Sub hero section */
-
-.sub-hero-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 2%;
-}
-.sub-hero-item {
-  width: 35%;
-  height: 650px;
-}
-.sub-hero-item > img {
-  width: 100%;
-  object-fit: contain;
-  height: inherit;
-}
-.sub-hero-item:last-child > h1,
-h3 {
-  padding-left: 3%;
-}
-.sub-hero-item:last-child > h3 {
-  color: #1eb2a6;
-}
-.sub-hero-item:last-child > h1 {
-  margin-top: 6px;
-  font-size: 2.3rem;
-  font-weight: 300;
-  line-height: 1.4;
-}
-.benefit-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-
-  flex-direction: column;
-}
-.benefit-item {
-  width: 100%;
-  height: 150px;
-  box-shadow: #1eb2a6 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px,
-    rgba(20, 18, 19, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(0, 0, 0, 0.05) 25px 25px;
-  margin-top: 10px;
-}
-.benefit-item:nth-child(2) {
-  margin-top: 30px;
-}
-.benefit-item:nth-child(3) {
-  margin-top: 30px;
-}
-.benefit-item:hover {
-  background-color: #1eb2a6;
-  color: white;
-  transition: 0.8s ease-in-out;
-}
-.box {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  align-items: center;
-}
-.box > img {
-  width: 100%;
-  color: #1eb2a6;
-  height: inherit;
-}
-.benefit-item > p {
-  text-align: start;
-  padding-left: 3.4%;
-  font-size: 14px;
-}
-.box > h1 {
-  font-size: 16px;
-  text-wrap: nowrap;
-  font-family: 200;
-}
-@media screen and (max-width: 470px) {
-  .sub-hero-container {
-    flex-direction: column;
-  }
-  .sub-hero-item {
-    width: 80%;
-    height: fit-content;
-  }
-  .sub-hero-item:first-child {
-    display: none;
-  }
-}
-@media screen and (max-width: 1028px) {
-  .sub-hero-container {
-    flex-direction: column;
-    height: fit-content;
-  }
-  .sub-hero-item {
-    width: 80%;
-    height: fit-content;
-  }
-  .sub-hero-item:first-child {
-    display: none;
-  }
-}
+          <p>Courses</p>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
