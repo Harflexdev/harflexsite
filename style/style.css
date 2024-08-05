@@ -184,14 +184,16 @@ nav > .ad {
   font-size: 2rem;
   display: none;
 }
+
 @media screen and (max-width: 1028px) {
   .nav-links {
     width: 100%;
     display: flex;
     text-align: center;
     height: calc(100vh - 60px);
-    align-items: center;
     z-index: 1;
+
+    align-items: center;
     position: absolute;
     flex-direction: column;
     top: 60px;
