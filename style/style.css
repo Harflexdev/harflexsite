@@ -267,8 +267,7 @@ nav > .ad {
   justify-content: center;
   gap: 30px;
   padding: 2%;
-    z-index: -1;
-
+  z-index: -1;
 }
 .home-item {
   height: 400px;
@@ -299,13 +298,13 @@ nav > .ad {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 90px;
+  gap: 120px;
 }
 .btn-coll {
   height: 100px;
   display: flex;
   align-items: center;
-  width: 170px;
+  justify-content: center;
 }
 .btn-coll > button {
   width: 160px;
@@ -330,62 +329,37 @@ nav > .ad {
 }
 
 @media screen and (max-width: 470px) {
-  .header-container {
+  .home-container {
     flex-direction: column;
-  }
-  .home-item {
-    width: 100%;
     height: fit-content;
   }
-  .home-item:first-child > h1 {
-    font-size: 20px;
-    text-align: start;
-    word-wrap: normal;
-    text-wrap: nowrap;
-    display: flex;
-    justify-content: center;
+  .home-item:first-child {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
   }
   .home-item:first-child > h3 {
-    font-size: xx-small;
-    text-align: start;
+    font-size: 0.8rem;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
   }
-  .home-item > p {
-    font-size: 16px;
-    word-break: break-all;
-    max-width: 600px;
-    text-align: start;
-    display: flex;
-    justify-content: center;
+  .home-item:first-child > h1 {
+    font-size: 1.9rem;
   }
-  .home-item:last-child {
+  .header-item:last-child {
     display: none;
   }
   .btn {
-    flex-direction: column;
     gap: 0;
-  }
-}
-@media screen and (max-width: 1028px) {
-  .header-container {
     flex-direction: column;
+    justify-content: left;
   }
-  .home-item {
-    width: 100%;
-    height: fit-content;
+  .btn-coll > button {
+    width: 300px;
   }
-  .home-item > h1 {
-    font-size: 1.3rem;
-    text-wrap: balance;
-  }
-  /* .home-item > h3 {
-    font-size: 1rem;
-  } */
-  .home-item:last-child {
-    display: none;
-  }
-  .btn {
-    gap: 30px;
+  .btn-coll {
+    gap: 0;
+    justify-content: flex-start;
   }
 }
