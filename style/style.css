@@ -4,36 +4,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf)
-    format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0e.ttf)
-    format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf)
-    format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhs.ttf)
-    format("truetype");
-}
+
 body {
-  z-index: 1;
+  z-index: -1;
   overflow-x: hidden;
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -256,10 +229,11 @@ nav > .ad {
 @media screen and (max-width: 470px) {
   .nav-links {
     width: 100%;
-    display: flex;
+    display: none;
     text-align: center;
     height: calc(100vh - 60px);
     z-index: 1;
+    position: fixed;
     align-items: center;
     position: absolute;
     flex-direction: column;
@@ -268,7 +242,7 @@ nav > .ad {
     background-blend-mode: soft-light;
     /* height: calc(100vh - 60px); */
     gap: 20px;
-    transform: translateX(100%);
+    transform: translateY(-200%);
     right: 0px;
     transition: transform 0.7s ease-in-out;
   }
@@ -291,7 +265,7 @@ nav > .ad {
   }
 
   .nav-links.hidden {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .home-container {
@@ -376,7 +350,7 @@ nav > .ad {
   .home-item:first-child > h3 {
     font-size: 0.8rem;
     display: flex;
-    margin-top: 70px;
+    margin-top: 120px;
     align-items: flex-start;
   }
   .home-item:first-child > h1 {
