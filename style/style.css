@@ -365,3 +365,40 @@ nav > .ad {
     justify-content: flex-start;
   }
 }
+@media screen and (max-width: 1028px) {
+  .home-container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .home-item:first-child {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+  }
+  .home-item:first-child > h3 {
+    font-size: 0.8rem;
+    display: flex;
+    margin-top: 70px;
+    align-items: flex-start;
+  }
+  .home-item:first-child > h1 {
+    font-size: 1.9rem;
+    margin-top: 10px;
+  }
+  .header-item:last-child {
+    display: none;
+  }
+  .btn {
+    gap: 10px;
+    justify-content: left;
+  }
+  .btn-coll > button {
+    width: 300px;
+  }
+  .btn-coll {
+    gap: 0;
+    justify-content: flex-start;
+  }
+}
+
