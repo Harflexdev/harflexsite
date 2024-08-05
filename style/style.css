@@ -342,10 +342,12 @@ nav > .ad {
   .home-item:first-child > h3 {
     font-size: 0.8rem;
     display: flex;
+    margin-top: 70px;
     align-items: flex-start;
   }
   .home-item:first-child > h1 {
     font-size: 1.9rem;
+    margin-top: 10px;
   }
   .header-item:last-child {
     display: none;
