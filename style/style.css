@@ -518,6 +518,10 @@ h3 {
     width: 35%;
     height: 400px;
   }
+    .sub-hero-item:last-child {
+    width: 35%;
+    height: 700px;
+  }
   .sub-hero-item > img {
     width: 100%;
     object-fit: contain;
