@@ -702,6 +702,10 @@ h1 {
     width: 100%;
     height: fit-content;
   }
+  .course-content-item:first-child > img {
+  width: 70%;
+  height: 50px;
+}
   #course > h1 {
     font-size: 17px;
   }
