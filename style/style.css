@@ -512,16 +512,12 @@ h3 {
   .sub-hero-item {
     width: 80%;
     height: fit-content;
-    background-color: red;
   }
   .sub-hero-item:first-child {
     width: 35%;
     height: 400px;
   }
-    .sub-hero-item:last-child {
-    width: 35%;
-    height: 700px;
-  }
+
   .sub-hero-item > img {
     width: 100%;
     object-fit: contain;
