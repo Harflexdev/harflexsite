@@ -127,6 +127,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  position: fixed;
   z-index: 2;
   margin: auto;
   transition: 0.6s ease-in-out;
