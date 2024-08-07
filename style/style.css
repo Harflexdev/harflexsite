@@ -391,7 +391,7 @@ nav > .ad {
     font-size: 2rem;
     margin-top: 10px;
   }
-  .home-item:first-child > h3 {
+  .home-item:f irst-child > h3 {
     font-size: 0.8rem;
     display: flex;
     margin-top: 190px;
@@ -512,6 +512,16 @@ h3 {
   .sub-hero-item {
     width: 80%;
     height: fit-content;
+    background-color: red;
+  }
+  .sub-hero-item:first-child {
+    width: 35%;
+    height: 400px;
+  }
+  .sub-hero-item > img {
+    width: 100%;
+    object-fit: contain;
+    height: inherit;
   }
   .benefit-container {
     flex-direction: column;
