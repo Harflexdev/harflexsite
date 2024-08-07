@@ -127,7 +127,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  position: fixed;
   z-index: 2;
   margin: auto;
   transition: 0.6s ease-in-out;
@@ -189,6 +188,9 @@ nav > .ad {
 }
 
 @media screen and (max-width: 1028px) {
+  nav {
+    position: fixed;
+  }
   .nav-links {
     width: 100%;
     display: none;
@@ -229,6 +231,9 @@ nav > .ad {
 }
 
 @media screen and (max-width: 470px) {
+  nav {
+    position: fixed;
+  }
   .nav-links {
     width: 100%;
     display: none;
@@ -341,13 +346,12 @@ nav > .ad {
 @media screen and (max-width: 470px) {
   .home-container {
     flex-direction: column;
-    height: fit-content;
+    height: 120vh;
   }
   .home-item:first-child {
     margin: 0;
     width: 100%;
     padding: 10px;
-    height: fit-content;
   }
   .home-item:first-child > h3 {
     font-size: 0.8rem;
@@ -365,7 +369,6 @@ nav > .ad {
   .btn {
     gap: 0;
     flex-direction: column;
-    justify-content: left;
   }
   .btn-coll > button {
     width: 200px;
@@ -378,7 +381,6 @@ nav > .ad {
 @media screen and (max-width: 1028px) {
   .home-container {
     flex-direction: column;
-    height: fit-content;
   }
   .home-item:first-child {
     width: 100%;
