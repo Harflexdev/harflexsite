@@ -428,7 +428,7 @@ nav > .ad {
   width: 35%;
   height: 700px;
 }
-.sub-hero-item > img {
+.sub-hero-item:first-child > img {
   width: 100%;
   object-fit: contain;
   height: inherit;
