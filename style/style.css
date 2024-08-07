@@ -705,6 +705,8 @@ h1 {
   .course-content-item:first-child > img {
   width: 75%;
   height: 50px;
+  object-fit: cover;
+
 }
   #course > h1 {
     font-size: 17px;
