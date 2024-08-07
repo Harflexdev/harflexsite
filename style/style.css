@@ -203,7 +203,7 @@ nav > .ad {
     background-blend-mode: soft-light;
     /* height: calc(100vh - 60px); */
     gap: 20px;
-    transform: translateX(100%);
+    transform: translateY(-200%);
     overflow-x: hidden;
     right: 0;
     transition: transform 0.7s ease-in-out;
