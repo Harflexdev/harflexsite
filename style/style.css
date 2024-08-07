@@ -21,8 +21,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: 50px;
   background-position-x: right;
-  /* background-color: rgb(27, 26, 26);
-  background-blend-mode: luminosity; */
+  background-color: rgb(27, 26, 26);
 }
 @media screen and (max-width: 650px) {
   #home {
@@ -756,5 +755,84 @@ h1 {
   .course-item > button {
     height: 40px;
     width: 70%;
+  }
+}
+/* Online course section */
+#online-course {
+  background-color: #e8eaeb;
+}
+#online-course > h3 {
+  text-align: center;
+  color: #1eb2a6;
+}
+#online-course > h1 {
+  text-align: center;
+}
+.online-course-container {
+  margin-top: 90px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 4% 0% 4%;
+  gap: 10px;
+}
+.online-course-item {
+  text-align: center;
+  border-radius: 7px;
+  height: 250px;
+  color: white;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 30%;
+}
+.online-course-item:hover {
+  color: white;
+  background-color: #1eb2a6;
+  transition: 0.5s ease-in-out;
+}
+.online-course-item > img {
+  display: flex;
+  width: 60%;
+  padding: 2%;
+  margin: auto;
+}
+.online-course-item > h3 {
+  color: black;
+}
+.online-course-item > button {
+  height: 23px;
+  width: 52%;
+  margin-top: 40px;
+  color: #1eb2a6;
+  border-radius: 8px;
+  border: 0;
+}
+@media screen and (max-width: 470px) {
+  #online-course {
+    height: fit-content;
+  }
+  .online-course-container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .online-course-item {
+    width: 90%;
+    height: fit-content;
+    padding-bottom: 2%;
+  }
+}
+@media screen and (max-width: 1028px) {
+  #online-course {
+    height: fit-content;
+  }
+  .online-course-container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .online-course-item {
+    width: 90%;
+    height: fit-content;
+    padding-bottom: 2%;
   }
 }
