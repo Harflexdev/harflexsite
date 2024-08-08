@@ -675,7 +675,7 @@ h1 {
 
 .course-content-item:first-child > img {
   width: 100%;
-  height: inherit;
+  height: 100%;
 }
 .course-content-item:last-child {
   height: fit-content;
