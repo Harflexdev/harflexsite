@@ -668,6 +668,7 @@ h1 {
   height: fit-content;
   border-radius: 100%;
   padding: 3%;
+  height: 60px;
   background-color: #1eb2a6;
   width: 45%;
 }
