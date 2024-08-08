@@ -747,7 +747,7 @@ h1 {
     height: fit-content;
   }
     .course-content-item:first-child > img {
-    width: 70%;
+    width: 50%;
     height: 80px;
   }
   #course > h1 {
