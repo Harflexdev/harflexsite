@@ -636,7 +636,7 @@ h1 {
   overflow: hidden;
 
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 .course-item {
   height: 400px;
@@ -667,7 +667,6 @@ h1 {
   height: fit-content;
   border-radius: 100%;
   padding: 3%;
-  background-color: #1eb2a6;
   width: 45%;
 }
 
