@@ -205,7 +205,7 @@ nav > .ad {
     background-color: rgb(70, 59, 59);
     background-blend-mode: soft-light;
     /* height: calc(100vh - 60px); */
-    gap: 20px;
+    gap: 60px;
     transform: translateY(-200%);
     overflow-x: hidden;
     right: 0;
@@ -244,11 +244,11 @@ nav > .ad {
     align-items: center;
     position: absolute;
     flex-direction: column;
-    top: 60px;
+    top: 40px;
     background-color: rgb(0, 0, 0);
     background-blend-mode: soft-light;
     /* height: calc(100vh - 60px); */
-    gap: 20px;
+    gap: 60px;
     transform: translateY(-200%);
     right: 0px;
     transition: transform 0.7s ease-in-out;
